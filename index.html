@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lupii Hocheiului — Asociația Sportivă Lupii Hocheiului pe Gheață Brașov</title>
+  <meta name="description" content="Hub-ul oficial de susținere pentru Asociația Sportivă Lupii Hocheiului pe Gheață. Donează, redirecționează 3,5% sau sponsorizează viitorul copiilor în hocheiul pe gheață.">
+  <meta name="theme-color" content="#070d18">
+
+  <!-- Open Graph (WhatsApp / Facebook / Instagram sharing) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lupiihocheiului.github.io/">
+  <meta property="og:title" content="Lupii Hocheiului — Susține hocheiul juvenil din Brașov">
+  <meta property="og:description" content="Donează, redirecționează 3,5% din impozit sau sponsorizează viitorul copiilor în hocheiul pe gheață.">
+  <meta property="og:locale" content="ro_RO">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230284c7'/%3E%3Cpath d='M8.6 6.2 6.4 8.4l5.1 5.1-2.9 2.9c-.7.7-1 1.5-1.1 2.3-1-.1-1.9.2-2.6.9a2.5 2.5 0 1 0 3.5 3.5c.7-.7 1-1.6.9-2.6.8-.1 1.6-.4 2.3-1.1l2.9-2.9 5.1 5.1 2.2-2.2L8.6 6.2z' fill='%23fff' transform='translate(-1.5,-1.5)'/%3E%3C/svg%3E">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-dark: #070d18;
+      --bg-card: #0e172a;
+      --bg-card-hover: #15223c;
+      --bg-accent: #0f274a;
+      --ice-primary: #0284c7;
+      --ice-cyan: #38bdf8;
+      --ice-light: #e0f2fe;
+      --text-white: #ffffff;
+      --text-light: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-color: rgba(56, 189, 248, 0.15);
+      --border-hover: rgba(56, 189, 248, 0.4);
+      --gold: #f59e0b;
+      --gold-light: #fef3c7;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.35);
+      --shadow-glow: 0 0 25px rgba(56, 189, 248, 0.25);
+      --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(14, 165, 233, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 65%, rgba(2, 132, 199, 0.1) 0%, transparent 45%),
+        linear-gradient(180deg, #070d18 0%, #0a1324 50%, #060a13 100%);
+      background-attachment: fixed;
+    }
+
+    a {
+      color: var(--ice-cyan);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--ice-light);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header & Navigation */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7, 13, 24, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: 0.5px;
+      color: var(--text-white);
+    }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--ice-primary), var(--ice-cyan));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+      flex-shrink: 0;
+    }
+
+    .brand-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .nav-link:hover {
+      color: var(--text-white);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--ice-primary), #0284c7);
+      color: #fff !important;
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.35);
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
+    }
+
+    /* Mobile Hamburger Button */
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      color: var(--text-white);
+      cursor: pointer;
+      padding: 8px 10px;
+      font-size: 1.2rem;
+    }
+
+    /* Mobile Drawer */
+    .mobile-nav {
+      display: none;
+      background: #0a1222;
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 24px 20px;
+    }
+
+    .mobile-nav.open {
+      display: block;
+    }
+
+    .mobile-nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .mobile-nav-link {
+      display: block;
+      color: var(--text-light);
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 70px 0 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    .badge-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ice-cyan);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.3rem, 5.5vw, 3.8rem);
+      font-weight: 900;
+      line-height: 1.18;
+      color: var(--text-white);
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, #ffffff 30%, var(--ice-cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 40px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    /* 3 Dominant Action Cards */
+    .action-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+
+    .action-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 30px 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .action-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--ice-cyan), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .action-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-hover);
+      box-shadow: var(--shadow-md), var(--shadow-glow);
+    }
+
+    .action-card:hover::before {
+      opacity: 1;
+    }
+
+    .action-card.featured {
+      background: linear-gradient(180deg, #12213d 0%, var(--bg-card) 100%);
+      border-color: rgba(56, 189, 248, 0.35);
+    }
+
+    .action-card.featured::before {
+      opacity: 1;
+    }
+
+    .action-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: rgba(56, 189, 248, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ice-cyan);
+      margin-bottom: 18px;
+    }
+
+    .action-card.featured .action-icon {
+      background: rgba(56, 189, 248, 0.2);
+      color: #fff;
+    }
+
+    .action-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 10px;
+    }
+
+    .action-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 13px 22px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-family: var(--font-heading);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--ice-cyan) 0%, var(--ice-primary) 100%);
+      color: #070d18;
+      box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #7dd3fc 0%, var(--ice-cyan) 100%);
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
+      transform: translateY(-2px);
+      color: #070d18;
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-white);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--ice-cyan);
+      color: var(--ice-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #fbbf24 0%, var(--gold) 100%);
+      color: #070d18;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+    }
+
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #fde68a 0%, #fbbf24 100%);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+      transform: translateY(-2px);
+      color: #070d18;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 65px 0;
+      position: relative;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 44px;
+    }
+
+    .section-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--ice-cyan);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 800;
+      color: var(--text-white);
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+    }
+
+    /* Content Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+
+    /* Bank Account Display with Copy Button */
+    .bank-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 24px 0;
+    }
+
+    .bank-box {
+      background: rgba(14, 23, 42, 0.8);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      position: relative;
+    }
+
+    .bank-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .currency-pill {
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--ice-cyan);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .iban-field {
+      background: #060a13;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-white);
+      letter-spacing: 0.8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      word-break: break-all;
+    }
+
+    .btn-copy {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--ice-cyan);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      width: 100%;
+    }
+
+    .btn-copy:hover {
+      background: var(--ice-cyan);
+      color: #070d18;
+    }
+
+    .btn-copy.copied {
+      background: #10b981;
+      border-color: #10b981;
+      color: #ffffff;
+    }
+
+    /* Steps list for companies */
+    .steps-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 16px;
+      margin: 30px 0;
+    }
+
+    .step-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      position: relative;
+    }
+
+    .step-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--ice-primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
+
+    .step-item h4 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      color: var(--text-white);
+      margin-bottom: 6px;
+    }
+
+    .step-item p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    /* Contract Download Box */
+    .download-card {
+      background: linear-gradient(135deg, rgba(14, 23, 42, 0.9) 0%, rgba(15, 39, 74, 0.6) 100%);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .download-info h3 {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      color: var(--text-white);
+      margin-bottom: 6px;
+    }
+
+    .download-info p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .download-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.9rem;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--text-white);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-download:hover {
+      background: var(--ice-primary);
+      border-color: var(--ice-cyan);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* Legal Data Table */
+    .legal-data-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .legal-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .legal-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .legal-value {
+      font-size: 0.95rem;
+      color: var(--text-white);
+      font-weight: 500;
+    }
+
+    /* QR Code Card */
+    .qr-card {
+      background: rgba(14, 23, 42, 0.9);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin: 40px auto 0;
+      max-width: 620px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      text-align: left;
+    }
+
+    .qr-image {
+      width: 130px;
+      height: 130px;
+      background: #fff;
+      padding: 8px;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    .qr-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .qr-content h4 {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      color: var(--text-white);
+      margin-bottom: 6px;
+    }
+
+    .qr-content p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .qr-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .qr-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 6px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--ice-cyan);
+    }
+
+    .qr-btn:hover {
+      background: var(--ice-cyan);
+      color: #070d18;
+    }
+
+    /* Contact Form */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 36px;
+    }
+
+    .contact-info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: rgba(56, 189, 248, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ice-cyan);
+      flex-shrink: 0;
+    }
+
+    .contact-item-content h4 {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+
+    .contact-item-content p {
+      color: var(--text-white);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-light);
+      margin-bottom: 6px;
+    }
+
+    .form-control {
+      width: 100%;
+      background: #070d18;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      color: var(--text-white);
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--ice-cyan);
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+    }
+
+    select.form-control {
+      cursor: pointer;
+    }
+
+    textarea.form-control {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0f172a;
+      border: 1px solid var(--ice-cyan);
+      color: #fff;
+      padding: 14px 22px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(56, 189, 248, 0.3);
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 9999;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #040810;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 40px 0 30px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--text-white);
+      margin-bottom: 8px;
+    }
+
+    .footer-legal {
+      margin-top: 16px;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+
+    /* Responsive Queries */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .hero {
+        padding: 45px 0 35px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .download-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .download-actions {
+        width: 100%;
+      }
+
+      .btn-download {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .qr-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .qr-buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="Lupii Hocheiului Brașov">
+        <div class="brand-icon">
+          <!-- Ice Hockey Crossed Sticks SVG Icon -->
+          <svg viewBox="0 0 24 24">
+            <path d="M19.5 2.5a1 1 0 0 0-1.4 0L14 6.6 9.9 2.5a1 1 0 0 0-1.4 1.4L12.6 8l-8.5 8.5C3.4 17.2 3 18.1 3 19a2.5 2.5 0 0 0 4.2 1.8l2.9-2.9 2.9 2.9A2.5 2.5 0 0 0 17.2 19c0-.9-.4-1.8-1.1-2.5L7.6 8l4.1-4.1 4.1 4.1a1 1 0 0 0 1.4-1.4L13.1 2.5l6.4 0a1 1 0 0 0 0-2zM5.5 19.3c-.4-.4-.5-.9-.5-1.3 0-.3.1-.6.3-.8L12 10.5l1.5 1.5-6.7 6.7c-.3.4-.8.6-1.3.6z"/>
+          </svg>
+        </div>
+        <span>LUPII HOCHEIULUI</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#sustine" class="nav-link">Susține-ne</a></li>
+          <li><a href="#companii" class="nav-link">Companii</a></li>
+          <li><a href="#despre" class="nav-link">Despre Noi</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#sustine" class="nav-cta">Donează Acum</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Meniu Navigație">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileNav" class="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li><a href="#sustine" class="mobile-nav-link" onclick="closeMobileNav()">Susține-ne</a></li>
+        <li><a href="#companii" class="mobile-nav-link" onclick="closeMobileNav()">Pentru Companii</a></li>
+        <li><a href="#despre" class="mobile-nav-link" onclick="closeMobileNav()">Despre Noi</a></li>
+        <li><a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()">Contact</a></li>
+        <li><a href="#sustine" class="mobile-nav-link" onclick="closeMobileNav()" style="background: var(--ice-primary); color: #fff;">Donează Direct</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="badge-hero">
+        <span>Asociația Sportivă Lupii Hocheiului pe Gheață</span>
+      </div>
+
+      <h1 class="hero-title">
+        Pasiune, Disciplină &<br><span>Viitor pe Gheață</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Susținem creșterea armonioasă a copiilor și tinerilor prin sportul de echipă. Fii alături de Lupii Hocheiului în formarea noilor generații!
+      </p>
+
+      <!-- 3 Dominant Action Cards -->
+      <div class="action-cards">
+        <!-- CTA 1: Donează -->
+        <div class="action-card">
+          <div class="action-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <h3>DONEAZĂ</h3>
+          <p>Sprijină direct antrenamentele și obiectivele asociației prin transfer bancar sau donație online.</p>
+          <a href="#sustine" class="btn btn-primary">Donează Direct</a>
+        </div>
+
+        <!-- CTA 2: Redirecționează 3,5% -->
+        <div class="action-card featured">
+          <div class="action-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <h3>REDIRECȚIONEAZĂ 3,5%</h3>
+          <p>Fără niciun cost din buzunarul tău, redirecționează impozitul pe venit datorat statului către hochei.</p>
+          <a href="#formular-35" class="btn btn-gold">Redirecționează 3,5%</a>
+        </div>
+
+        <!-- CTA 3: Sponsorizează -->
+        <div class="action-card">
+          <div class="action-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3>SPONSORIZEAZĂ</h3>
+          <p>Pentru persoane juridice: deduce cheltuielile de sponsorizare și descarcă contractul precompletat.</p>
+          <a href="#companii" class="btn btn-outline">Pentru Companii</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cine Suntem & Ce Susții Section -->
+  <section id="cine-suntem">
+    <div class="container">
+      <div class="card">
+        <div class="section-header" style="margin-bottom: 24px; text-align: left;">
+          <span class="section-tag">Transparență &amp; Misiune</span>
+          <h2 class="section-title">Cine suntem și ce susții</h2>
+        </div>
+        
+        <p style="font-size: 1.05rem; color: var(--text-light); margin-bottom: 16px;">
+          <strong>ASOCIAȚIA SPORTIVĂ LUPII HOCHEIULUI PE GHEAȚĂ</strong> este o asociație non-profit fondată în Brașov, dedicată promovării hocheiului pe gheață, sportului juvenil și valorilor fair-play-ului.
+        </p>
+
+        <p style="font-size: 0.98rem; color: var(--text-muted); margin-bottom: 0;">
+          Conform statutului și contractului oficial al asociației, orice contribuție, donație sau sponsorizare este destinată exclusiv 
+          <span style="color: var(--ice-cyan); font-weight: 600;">„susținerii activităților sportive și a obiectivelor fără scop lucrativ ale asociației”</span>, oferind copiilor un cadru organizat, sigur și performant pentru practicarea acestui sport pe gheață.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secțiunea SUSȚINE-NE (Persoane Fizice) -->
+  <section id="sustine">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Persoane Fizice</span>
+        <h2 class="section-title">Cum poți susține Lupii Hocheiului</h2>
+        <p class="section-desc">Fiecare gest contează. Alege modalitatea cea mai convenabilă pentru tine.</p>
+      </div>
+
+      <!-- Transfer Bancar Box -->
+      <div class="card">
+        <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 8px;">A. Transfer Bancar Direct</h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px;">
+          Poți efectua un transfer bancar direct în conturile deschise la <strong>Banca Transilvania</strong>:
+        </p>
+
+        <div class="bank-grid">
+          <!-- Cont RON -->
+          <div class="bank-box">
+            <div class="bank-header">
+              <span style="font-weight: 600; font-size: 0.95rem;">Cont Curent</span>
+              <span class="currency-pill">LEI (RON)</span>
+            </div>
+            <div class="iban-field" id="iban-ron">RO27BTRLRONCRT0DF4150301</div>
+            <button class="btn-copy" onclick="copyText('RO27BTRLRONCRT0DF4150301', this)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copiază IBAN RON</span>
+            </button>
+          </div>
+
+          <!-- Cont EUR -->
+          <div class="bank-box">
+            <div class="bank-header">
+              <span style="font-weight: 600; font-size: 0.95rem;">Cont Curent</span>
+              <span class="currency-pill">EURO (EUR)</span>
+            </div>
+            <div class="iban-field" id="iban-eur">RO71BTRLEURCRT0DF4150301</div>
+            <button class="btn-copy" onclick="copyText('RO71BTRLEURCRT0DF4150301', this)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copiază IBAN EUR</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="legal-data-grid">
+          <div class="legal-item">
+            <span class="legal-label">Beneficiar</span>
+            <span class="legal-value">ASOCIAȚIA SPORTIVĂ LUPII HOCHEIULUI PE GHEAȚĂ</span>
+          </div>
+          <div class="legal-item">
+            <span class="legal-label">Cod Fiscal (CUI)</span>
+            <span class="legal-value">54787663</span>
+          </div>
+          <div class="legal-item">
+            <span class="legal-label">Banca</span>
+            <span class="legal-value">Banca Transilvania</span>
+          </div>
+          <div class="legal-item">
+            <span class="legal-label">Explicație transfer</span>
+            <span class="legal-value">Donație activitate sportivă</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Donație Online & Redirecționare 3.5% Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+        
+        <!-- Bursa Binelui -->
+        <div class="card">
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 8px;">B. Donație Online</h3>
+          <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 20px;">
+            Platforma Bursa Binelui (fără comisioane bancare pentru asociație).
+          </p>
+          <div style="background: rgba(255, 255, 255, 0.03); padding: 14px; border-radius: var(--radius-sm); margin-bottom: 20px; font-size: 0.85rem; color: var(--text-muted);">
+            ℹ️ <em>Pagina de campanie online pe Bursa Binelui este în curs de activare. Puteți contribui direct prin transfer bancar.</em>
+          </div>
+          <button class="btn btn-outline" style="cursor: not-allowed; opacity: 0.85;" title="Link-ul va deveni activ imediat după validarea profilului pe platformă">
+            Donație Online (În curând)
+          </button>
+        </div>
+
+        <!-- Redirecționează 3.5% -->
+        <div class="card" id="formular-35">
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 8px;">C. Redirecționează 3,5%</h3>
+          <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 20px;">
+            Completează formularul 230 digital prin Redirectioneaza.ro în mai puțin de 2 minute.
+          </p>
+          <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); padding: 14px; border-radius: var(--radius-sm); margin-bottom: 20px; font-size: 0.85rem; color: var(--gold-light);">
+            ⚡ <em>Formularul digital 230 nu te costă nimic! Banii provin din impozitul pe venit pe care statul l-a oprit deja.</em>
+          </div>
+          <button class="btn btn-gold" onclick="alert('Formularul digital 230 pe Redirectioneaza.ro este în proces de înregistrare. Pentru suport imediat, vă rugăm să ne contactați!')">
+            Completează Formularul 3,5%
+          </button>
+        </div>
+
+      </div>
+
+      <!-- QR Code Banner / Box -->
+      <div class="qr-card">
+        <div class="qr-image">
+          <img src="QR_Lupii_Hocheiului.svg" alt="QR Code Lupii Hocheiului" onerror="this.src='QR_Lupii_Hocheiului.png'">
+        </div>
+        <div class="qr-content">
+          <h4>QR Hub Digital — Lupii Hocheiului</h4>
+          <p>Scanează pentru acces rapid pe mobil la donații, 3,5% și contract de sponsorizare. Ideal pentru afișe, pliante și echipamente.</p>
+          <div class="qr-buttons">
+            <a href="QR_Lupii_Hocheiului.png" download class="qr-btn">Descarcă PNG</a>
+            <a href="QR_Lupii_Hocheiului.svg" download class="qr-btn">Descarcă Vector SVG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secțiunea PENTRU COMPANII (Sponsorizare) -->
+  <section id="companii">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Persoane Juridice</span>
+        <h2 class="section-title">Sponsorizează Lupii Hocheiului</h2>
+        <p class="section-desc">
+          Parteneriatul cu asociația noastră oferă companiilor posibilitatea de a direcționa facilitățile fiscale prevăzute de lege direct către dezvoltarea tinerilor sportivi.
+        </p>
+      </div>
+
+      <div class="card">
+        <div style="margin-bottom: 20px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 6px;">Cadrul Legal &amp; Procedură Simplificată</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Contractul este încheiat în conformitate cu <strong>Legea nr. 32/1994 privind sponsorizarea</strong>, cu modificările și completările ulterioare.
+          </p>
+        </div>
+
+        <ul class="steps-list">
+          <li class="step-item">
+            <div class="step-num">1</div>
+            <h4>Descarci</h4>
+            <p>Descarcă contractul precompletat în format DOCX sau PDF.</p>
+          </li>
+          <li class="step-item">
+            <div class="step-num">2</div>
+            <h4>Completezi</h4>
+            <p>Adaugi datele firmei tale și valoarea sponsorizării decise.</p>
+          </li>
+          <li class="step-item">
+            <div class="step-num">3</div>
+            <h4>Semnezi</h4>
+            <p>Semnezi olograf sau electronic contractul de sponsorizare.</p>
+          </li>
+          <li class="step-item">
+            <div class="step-num">4</div>
+            <h4>Virezi</h4>
+            <p>Efectuezi plata în contul bancar al asociației sportive.</p>
+          </li>
+          <li class="step-item">
+            <div class="step-num">5</div>
+            <h4>Transmiți</h4>
+            <p>Ne transmiți exemplarul semnat pe e-mail sau prin formular.</p>
+          </li>
+        </ul>
+
+        <!-- Download Contract Box -->
+        <div class="download-card">
+          <div class="download-info">
+            <h3>Contract Oficial de Sponsorizare</h3>
+            <p>Precompletat cu datele juridice ale asociației sportive.</p>
+          </div>
+          <div class="download-actions">
+            <!-- Download DOCX -->
+            <a href="Contract_sponsorizare_Lupii_Hocheiului.docx" download class="btn-download">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span>Descarcă DOCX</span>
+            </a>
+            <!-- Download PDF -->
+            <a href="Contract_sponsorizare_Lupii_Hocheiului.pdf" download class="btn-download" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.4);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M12 18v-6"></path><path d="m9 15 3 3 3-3"></path></svg>
+              <span>Descarcă PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Date de facturare & virament -->
+        <h4 style="font-family: var(--font-heading); color: var(--text-white); margin-top: 24px; margin-bottom: 12px; font-size: 1.1rem;">
+          Date Juridice pentru Contract:
+        </h4>
+        <div class="legal-data-grid">
+          <div class="legal-item">
+            <span class="legal-label">Denumire</span>
+            <span class="legal-value">ASOCIAȚIA SPORTIVĂ LUPII HOCHEIULUI PE GHEAȚĂ</span>
+          </div>
+          <div class="legal-item">
+            <span class="legal-label">Cod Fiscal (CUI)</span>
+            <span class="legal-value">54787663</span>
+          </div>
+          <div class="legal-item">
+            <span class="legal-label">Sediu Social</span>
+            <span class="legal-value">Str. Hărmanului nr. 63, parter, birou 1, Brașov</span>
+          </div>
+          <div class="legal-item">
+            <span class="legal-label">Reprezentant Legal</span>
+            <span class="legal-value">Tatiana Diaconu</span>
+          </div>
+          <div class="legal-item">
+            <span class="legal-label">Banca</span>
+            <span class="legal-value">Banca Transilvania</span>
+          </div>
+          <div class="legal-item">
+            <span class="legal-label">Cont RON</span>
+            <span class="legal-value" style="font-family: monospace;">RO27BTRLRONCRT0DF4150301</span>
+          </div>
+          <div class="legal-item">
+            <span class="legal-label">Cont EUR</span>
+            <span class="legal-value" style="font-family: monospace;">RO71BTRLEURCRT0DF4150301</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secțiunea DESPRE NOI -->
+  <section id="despre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Despre Proiect</span>
+        <h2 class="section-title">Lupii Hocheiului Brașov</h2>
+        <p class="section-desc">Pasiune pentru hochei, respect, muncă în echipă și perseverență.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div class="card">
+          <div class="action-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+          </div>
+          <h3 style="font-family: var(--font-heading); color: #fff; margin-bottom: 10px;">Ce Facem</h3>
+          <p style="color: var(--text-muted); font-size: 0.92rem;">
+            Organizăm antrenamente pe gheață și pregătire fizică, oferind copiilor îndrumarea sportivă adecvată pentru a deprinde tainele hocheiului într-un mediu sigur și stimulativ.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="action-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 style="font-family: var(--font-heading); color: #fff; margin-bottom: 10px;">Echipa &amp; Copiii</h3>
+          <p style="color: var(--text-muted); font-size: 0.92rem;">
+            Fiecare copil învață valoarea prieteniei, colegialității și efortului susținut. Formăm nu doar sportivi agili, ci caractere puternice și disciplinate.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="action-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+          </div>
+          <h3 style="font-family: var(--font-heading); color: #fff; margin-bottom: 10px;">Galerie &amp; Activitate</h3>
+          <p style="color: var(--text-muted); font-size: 0.92rem;">
+            Secțiunea va fi actualizată constant cu fotografii autentice de la meciuri, turnee și momente de bucurie din viața clubului.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secțiunea CONTACT & FORMULAR -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contactează-ne</span>
+        <h2 class="section-title">Suntem Aici pentru Tine</h2>
+        <p class="section-desc">Ai o întrebare, dorești să devii sponsor sau să înscrii un copil la hochei? Scrie-ne!</p>
+      </div>
+
+      <div class="card">
+        <div class="contact-wrapper">
+          <!-- Date administrative oficiale -->
+          <div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 8px;">Date Oficiale</h3>
+            <p style="color: var(--text-muted); font-size: 0.92rem;">
+              Ne puteți contacta direct sau puteți lăsa un mesaj prin formularul alăturat.
+            </p>
+
+            <ul class="contact-info-list">
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-item-content">
+                  <h4>Sediu Social</h4>
+                  <p>Str. Hărmanului nr. 63, parter, birou 1, Brașov, județul Brașov</p>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-item-content">
+                  <h4>E-mail Oficial</h4>
+                  <p><a href="mailto:lupiihocheiului@gmail.com">lupiihocheiului@gmail.com</a></p>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-item-content">
+                  <h4>Telefon</h4>
+                  <p style="color: var(--text-muted); font-style: italic;">Urmează a fi adăugat la confirmare</p>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                </div>
+                <div class="contact-item-content">
+                  <h4>Cod Fiscal</h4>
+                  <p>CUI: 54787663</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Formular Interactiv de Contact -->
+          <div>
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label class="form-label" for="nume">Numele Tău / Nume Companie *</label>
+                <input type="text" id="nume" class="form-control" placeholder="ex: Ion Popescu / SC Sport SRL" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact_info">E-mail sau Număr de Telefon *</label>
+                <input type="text" id="contact_info" class="form-control" placeholder="ex: contact@exemplu.ro sau 07xx xxx xxx" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="subiect">Subiect *</label>
+                <select id="subiect" class="form-control" required>
+                  <option value="Sponsorizare Companie">Sponsorizare Companie (Persoană Juridică)</option>
+                  <option value="Donație Persoană Fizică">Donație / Redirecționare 3,5%</option>
+                  <option value="Înscriere Copil">Informații Înscriere Copil la Hochei</option>
+                  <option value="Alte Informații">Altă întrebare generală</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="mesaj">Mesajul Tău *</label>
+                <textarea id="mesaj" class="form-control" placeholder="Scrieți mesajul dumneavoastră..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="margin-top: 8px;">
+                Trimite Mesajul
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">ASOCIAȚIA SPORTIVĂ LUPII HOCHEIULUI PE GHEAȚĂ</div>
+      <p>Brașov, România • CUI: 54787663 • Banca Transilvania</p>
+      <div class="footer-legal">
+        &copy; <span id="copyright-year">2026</span> Lupii Hocheiului. Toate drepturile rezervate. Pagină oficială de informare și susținere sportivă.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element -->
+  <div id="toast" class="toast">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: #10b981;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toastMsg">IBAN-ul a fost copiat în clipboard!</span>
+  </div>
+
+  <script>
+    // Auto-update copyright year
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+    // Toggle Mobile Navigation
+    function toggleMobileNav() {
+      const nav = document.getElementById('mobileNav');
+      nav.classList.toggle('open');
+    }
+
+    function closeMobileNav() {
+      const nav = document.getElementById('mobileNav');
+      nav.classList.remove('open');
+    }
+
+    // Copy IBAN to clipboard with visual toast
+    function copyText(text, btnElement) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(showSuccess).catch(() => fallbackCopy(text));
+      } else {
+        fallbackCopy(text);
+      }
+
+      function showSuccess() {
+        showToast("IBAN copiat în clipboard!");
+        if (btnElement) {
+          const originalText = btnElement.querySelector('span').innerText;
+          btnElement.classList.add('copied');
+          btnElement.querySelector('span').innerText = "Copiat!";
+          setTimeout(() => {
+            btnElement.classList.remove('copied');
+            btnElement.querySelector('span').innerText = originalText;
+          }, 2000);
+        }
+      }
+
+      function fallbackCopy(str) {
+        const textarea = document.createElement('textarea');
+        textarea.value = str;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        try {
+          document.execCommand('copy');
+          showSuccess();
+        } catch (err) {
+          alert('IBAN: ' + str);
+        }
+        document.body.removeChild(textarea);
+      }
+    }
+
+    // Show Toast Notification
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    // Handle Contact Form Submission
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const nume = document.getElementById('nume').value.trim();
+      const contact = document.getElementById('contact_info').value.trim();
+      const subiect = document.getElementById('subiect').value;
+      const mesaj = document.getElementById('mesaj').value.trim();
+
+      const bodyText = encodeURIComponent(
+        `Nume: ${nume}\nContact: ${contact}\nSubiect: ${subiect}\n\nMesaj:\n${mesaj}`
+      );
+      const mailtoLink = `mailto:lupiihocheiului@gmail.com?subject=${encodeURIComponent('[Lupii Hocheiului] ' + subiect)}&body=${bodyText}`;
+
+      showToast("Se deschide clientul de e-mail...");
+      setTimeout(() => {
+        window.location.href = mailtoLink;
+      }, 600);
+    }
+  </script>
+</body>
+</html>
