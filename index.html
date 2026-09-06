@@ -899,6 +899,39 @@
       z-index: 9999;
     }
 
+    /* Go To Top Button */
+    .go-top-btn {
+      position: fixed;
+      bottom: 104px;
+      right: 24px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--ice-primary);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 8px rgba(2, 132, 199, 0.4);
+      transition: all 0.3s ease;
+      z-index: 9998;
+    }
+
+    .go-top-btn:hover {
+      transform: translateY(-4px);
+      background: var(--ice-cyan);
+    }
+
+    .go-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
     .toast.show {
       transform: translateY(0);
       opacity: 1;
@@ -1508,9 +1541,14 @@
       <p style="text-align: center; color: var(--text-muted);">Brașov, România • CUI: 54787663 • Banca Transilvania</p>
       <div class="footer-legal">
         &copy; <span id="copyright-year">2026</span> Lupii Hocheiului. Toate drepturile rezervate. Pagină oficială de informare și susținere sportivă.
-      </div>
-    </div>
-  </footer>
+  <!-- Floating Go To Top Button -->
+  <button id="goTopBtn" class="go-top-btn" aria-label="Mergi sus">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+    <span>Top</span>
+  </button>
 
   <!-- Toast Notification element -->
   <div id="toast" class="toast">
@@ -1521,6 +1559,21 @@
   <script>
     // Auto-update copyright year
     document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+    // Go To Top Button
+    const goTopBtn = document.getElementById('goTopBtn');
+    const onScroll = () => {
+      if (window.scrollY > 300) {
+        goTopBtn.classList.add('visible');
+      } else {
+        goTopBtn.classList.remove('visible');
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    goTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 
     // Toggle Mobile Navigation
     function toggleMobileNav() {
