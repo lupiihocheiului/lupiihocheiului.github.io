@@ -16,7 +16,8 @@
   <meta name="twitter:card" content="summary">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230284c7'/%3E%3Cpath d='M8.6 6.2 6.4 8.4l5.1 5.1-2.9 2.9c-.7.7-1 1.5-1.1 2.3-1-.1-1.9.2-2.6.9a2.5 2.5 0 1 0 3.5 3.5c.7-.7 1-1.6.9-2.6.8-.1 1.6-.4 2.3-1.1l2.9-2.9 5.1 5.1 2.2-2.2L8.6 6.2z' fill='%23fff' transform='translate(-1.5,-1.5)'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="logo-sm.png">
   
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,8 +58,7 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 88px;
-      font-size: 16px;
+      scroll-padding-top: 80px;
     }
 
     body {
@@ -68,35 +68,36 @@
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
-      background-image: 
-        radial-gradient(circle at 15% 15%, rgba(14, 165, 233, 0.12) 0%, transparent 40%),
-        radial-gradient(circle at 85% 65%, rgba(2, 132, 199, 0.1) 0%, transparent 45%),
-        linear-gradient(180deg, #070d18 0%, #0a1324 50%, #060a13 100%);
-      background-attachment: fixed;
     }
 
-    a {
-      color: var(--ice-cyan);
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-
-    a:hover {
-      color: var(--ice-light);
+    /* Ambient Hockey Light Effect */
+    body::before {
+      content: "";
+      position: fixed;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1000px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, rgba(2, 132, 199, 0.05) 45%, transparent 75%);
+      pointer-events: none;
+      z-index: 0;
     }
 
     .container {
       width: 100%;
-      max-width: 1140px;
+      max-width: 1120px;
       margin: 0 auto;
       padding: 0 24px;
+      position: relative;
+      z-index: 1;
     }
 
     /* Header & Navigation */
     .site-header {
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 100;
       background: rgba(7, 13, 24, 0.92);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border-color);
@@ -120,23 +121,17 @@
       color: var(--text-white);
     }
 
-    .brand-icon {
-      width: 40px;
-      height: 40px;
-      background: linear-gradient(135deg, var(--ice-primary), var(--ice-cyan));
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.35));
       flex-shrink: 0;
+      transition: transform 0.25s ease;
     }
 
-    .brand-icon svg {
-      width: 22px;
-      height: 22px;
-      fill: currentColor;
+    .brand:hover .brand-logo {
+      transform: scale(1.06) rotate(-2deg);
     }
 
     .nav-links {
@@ -918,12 +913,7 @@
   <header class="site-header">
     <div class="container nav-inner">
       <a href="#hero" class="brand" aria-label="Lupii Hocheiului Brașov">
-        <div class="brand-icon">
-          <!-- Ice Hockey Crossed Sticks SVG Icon -->
-          <svg viewBox="0 0 24 24">
-            <path d="M19.5 2.5a1 1 0 0 0-1.4 0L14 6.6 9.9 2.5a1 1 0 0 0-1.4 1.4L12.6 8l-8.5 8.5C3.4 17.2 3 18.1 3 19a2.5 2.5 0 0 0 4.2 1.8l2.9-2.9 2.9 2.9A2.5 2.5 0 0 0 17.2 19c0-.9-.4-1.8-1.1-2.5L7.6 8l4.1-4.1 4.1 4.1a1 1 0 0 0 1.4-1.4L13.1 2.5l6.4 0a1 1 0 0 0 0-2zM5.5 19.3c-.4-.4-.5-.9-.5-1.3 0-.3.1-.6.3-.8L12 10.5l1.5 1.5-6.7 6.7c-.3.4-.8.6-1.3.6z"/>
-          </svg>
-        </div>
+        <img src="logo-sm.png" alt="Sigla Lupii Hocheiului" class="brand-logo" width="44" height="44">
         <span>LUPII HOCHEIULUI</span>
       </a>
 
@@ -1118,15 +1108,20 @@
         <!-- Redirecționează 3.5% -->
         <div class="card" id="formular-35">
           <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 8px;">C. Redirecționează 3,5%</h3>
-          <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 20px;">
-            Completează formularul 230 digital prin Redirectioneaza.ro în mai puțin de 2 minute.
+          <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px;">
+            Completează formularul 230 digital în mai puțin de 2 minute, fără niciun cost din buzunarul tău.
           </p>
-          <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); padding: 14px; border-radius: var(--radius-sm); margin-bottom: 20px; font-size: 0.85rem; color: var(--gold-light);">
-            ⚡ <em>Formularul digital 230 nu te costă nimic! Banii provin din impozitul pe venit pe care statul l-a oprit deja.</em>
+          <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); padding: 12px 14px; border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 0.85rem; color: var(--gold-light);">
+            ⚡ <em>Banii provin din impozitul pe venit pe care statul l-a oprit deja pe parcursul anului trecut.</em>
           </div>
-          <button class="btn btn-gold" onclick="alert('Formularul digital 230 pe Redirectioneaza.ro este în proces de înregistrare. Pentru suport imediat, vă rugăm să ne contactați!')">
-            Completează Formularul 3,5%
-          </button>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="https://redirectioneaza.ro/api/ngo/form/lupii-hocheiului/" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="text-align: center; justify-content: center;">
+              Formular Digital (Redirectioneaza.ro)
+            </a>
+            <a href="https://formular230.ro/asociatia-sportiva-lupii-hocheiului-pe-gheata" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="text-align: center; justify-content: center; font-size: 0.88rem; padding: 8px 14px;">
+              Alternativă: Formular230.ro
+            </a>
+          </div>
         </div>
 
       </div>
@@ -1398,6 +1393,7 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
+      <img src="logo-sm.png" alt="Sigla Lupii Hocheiului" width="60" height="60" style="margin-bottom: 12px; filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.3));">
       <div class="footer-brand">ASOCIAȚIA SPORTIVĂ LUPII HOCHEIULUI PE GHEAȚĂ</div>
       <p>Brașov, România • CUI: 54787663 • Banca Transilvania</p>
       <div class="footer-legal">
