@@ -918,36 +918,37 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 110px;
-      height: 110px;
-      border-radius: 24px;
-      background: radial-gradient(circle, rgba(56, 189, 248, 0.28) 0%, rgba(14, 28, 54, 0.95) 75%);
-      border: 1.5px solid rgba(56, 189, 248, 0.45);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 25px rgba(56, 189, 248, 0.35);
-      margin-bottom: 20px;
-      padding: 10px;
+      width: 140px;
+      height: 140px;
+      border-radius: 28px;
+      background: #ffffff;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.45), 0 0 25px rgba(56, 189, 248, 0.35);
+      margin: 0 auto 20px;
+      padding: 12px;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     .footer-logo-wrap:hover {
-      transform: translateY(-3px) scale(1.04);
-      border-color: var(--ice-cyan);
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), 0 0 35px rgba(56, 189, 248, 0.5);
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55), 0 0 35px rgba(56, 189, 248, 0.5);
     }
 
     .footer-logo {
       width: 100%;
       height: 100%;
       object-fit: contain;
-      filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.5));
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
     }
 
     .footer-brand {
       font-family: var(--font-heading);
       font-weight: 800;
-      font-size: 1.15rem;
+      font-size: 1.2rem;
+      letter-spacing: 0.5px;
       color: var(--text-white);
-      margin-bottom: 8px;
+      text-align: center;
+      margin: 0 auto 8px;
+      max-width: 600px;
     }
 
     .footer-legal {
@@ -1499,12 +1500,12 @@
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center;">
       <div class="footer-logo-wrap">
-        <img src="logo-sm.png" alt="Sigla Lupii Hocheiului" class="footer-logo" width="70" height="70">
+        <img src="logo-hero.png" alt="Sigla Lupii Hocheiului" class="footer-logo" width="120" height="120">
       </div>
       <div class="footer-brand">ASOCIAȚIA SPORTIVĂ LUPII HOCHEIULUI PE GHEAȚĂ</div>
-      <p>Brașov, România • CUI: 54787663 • Banca Transilvania</p>
+      <p style="text-align: center; color: var(--text-muted);">Brașov, România • CUI: 54787663 • Banca Transilvania</p>
       <div class="footer-legal">
         &copy; <span id="copyright-year">2026</span> Lupii Hocheiului. Toate drepturile rezervate. Pagină oficială de informare și susținere sportivă.
       </div>
