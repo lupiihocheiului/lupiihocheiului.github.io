@@ -846,6 +846,27 @@
       text-align: center;
     }
 
+    .footer-logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.22) 0%, rgba(14, 23, 42, 0.85) 65%, transparent 100%);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.25), inset 0 0 15px rgba(56, 189, 248, 0.15);
+      margin-bottom: 16px;
+      padding: 10px;
+    }
+
+    .footer-logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
+    }
+
     .footer-brand {
       font-family: var(--font-heading);
       font-weight: 800;
@@ -1393,7 +1414,9 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <img src="logo-sm.png" alt="Sigla Lupii Hocheiului" width="60" height="60" style="margin-bottom: 12px; filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.3));">
+      <div class="footer-logo-wrap">
+        <img src="logo-sm.png" alt="Sigla Lupii Hocheiului" class="footer-logo" width="70" height="70">
+      </div>
       <div class="footer-brand">ASOCIAȚIA SPORTIVĂ LUPII HOCHEIULUI PE GHEAȚĂ</div>
       <p>Brașov, România • CUI: 54787663 • Banca Transilvania</p>
       <div class="footer-legal">
