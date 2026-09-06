@@ -16,7 +16,7 @@ Un singur URL (ideal pentru QR pe materiale printate, social media, afișe) prin
 ## Structură
 
 Site-ul este o singură pagină statică (`index.html`) — fără framework, fără build, fără dependențe.
-Hosting: **GitHub Pages** (gratuit), publicat automat la fiecare push pe `main`.
+Hosting: **GitHub Pages**, publicat automat la fiecare push pe `main`.
 
 ```
 index.html                                  # site-ul complet (single-page)
